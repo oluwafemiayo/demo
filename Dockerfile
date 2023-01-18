@@ -1,3 +1,4 @@
 FROM openjdk:17
-COPY ./target/*jar /usr/myapp
+WORKDIR /usr/src/app
+COPY ./target/*jar /usr/src/myapp
 CMD ["java", "jar"]
